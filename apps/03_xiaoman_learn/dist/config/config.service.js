@@ -6,20 +6,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppModule = void 0;
+exports.ConfigService = void 0;
 const common_1 = require("@nestjs/common");
-const app_controller_1 = require("./app.controller");
-const app_service_1 = require("./app.service");
-const person_module_1 = require("./person/person.module");
-const config_module_1 = require("./config/config.module");
-let AppModule = class AppModule {
+let ConfigService = class ConfigService {
+    create(createConfigDto) {
+        return 'This action adds a new config';
+    }
+    findAll() {
+        return `This action returns all config`;
+    }
+    findOne(id) {
+        return `This action returns a #${id} config`;
+    }
+    update(id, updateConfigDto) {
+        return `This action updates a #${id} config`;
+    }
+    remove(id) {
+        return `This action removes a #${id} config`;
+    }
 };
-AppModule = __decorate([
-    (0, common_1.Module)({
-        imports: [person_module_1.PersonModule, config_module_1.ConfigModule],
-        controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
-    })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+ConfigService = __decorate([
+    (0, common_1.Injectable)()
+], ConfigService);
+exports.ConfigService = ConfigService;
+//# sourceMappingURL=config.service.js.map
