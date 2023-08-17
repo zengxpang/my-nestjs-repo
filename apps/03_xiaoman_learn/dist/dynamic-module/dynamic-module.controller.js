@@ -12,81 +12,75 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PersonController = void 0;
+exports.DynamicModuleController = void 0;
 const common_1 = require("@nestjs/common");
-const person_service_1 = require("./person.service");
-const create_person_dto_1 = require("./dto/create-person.dto");
-const update_person_dto_1 = require("./dto/update-person.dto");
-const config_service_1 = require("../config/config.service");
-let PersonController = class PersonController {
-    constructor(personService, zxp2, zxp3, async, configService) {
-        this.personService = personService;
-        this.zxp2 = zxp2;
-        this.zxp3 = zxp3;
-        this.async = async;
-        this.configService = configService;
+const dynamic_module_service_1 = require("./dynamic-module.service");
+const create_dynamic_module_dto_1 = require("./dto/create-dynamic-module.dto");
+const update_dynamic_module_dto_1 = require("./dto/update-dynamic-module.dto");
+let DynamicModuleController = class DynamicModuleController {
+    constructor(dynamicModuleService, configOptions) {
+        this.dynamicModuleService = dynamicModuleService;
+        this.configOptions = configOptions;
     }
-    create(createPersonDto) {
-        return this.personService.create(createPersonDto);
+    create(createDynamicModuleDto) {
+        return this.dynamicModuleService.create(createDynamicModuleDto);
     }
     findAll() {
-        return this.configService.create('xxx');
+        console.log('configOptions', this.configOptions);
+        return this.dynamicModuleService.findAll();
     }
     findOne(id) {
-        return this.personService.findOne(+id);
+        return this.dynamicModuleService.findOne(+id);
     }
-    update(id, updatePersonDto) {
-        return this.personService.update(+id, updatePersonDto);
+    update(id, updateDynamicModuleDto) {
+        return this.dynamicModuleService.update(+id, updateDynamicModuleDto);
     }
     remove(id) {
-        return this.personService.remove(+id);
+        return this.dynamicModuleService.remove(+id);
     }
 };
 __decorate([
     (0, common_1.Post)(),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [create_person_dto_1.CreatePersonDto]),
+    __metadata("design:paramtypes", [create_dynamic_module_dto_1.CreateDynamicModuleDto]),
     __metadata("design:returntype", void 0)
-], PersonController.prototype, "create", null);
+], DynamicModuleController.prototype, "create", null);
 __decorate([
     (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
-], PersonController.prototype, "findAll", null);
+], DynamicModuleController.prototype, "findAll", null);
 __decorate([
     (0, common_1.Get)(':id'),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
-], PersonController.prototype, "findOne", null);
+], DynamicModuleController.prototype, "findOne", null);
 __decorate([
     (0, common_1.Patch)(':id'),
     __param(0, (0, common_1.Param)('id')),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, update_person_dto_1.UpdatePersonDto]),
+    __metadata("design:paramtypes", [String, update_dynamic_module_dto_1.UpdateDynamicModuleDto]),
     __metadata("design:returntype", void 0)
-], PersonController.prototype, "update", null);
+], DynamicModuleController.prototype, "update", null);
 __decorate([
     (0, common_1.Delete)(':id'),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
-], PersonController.prototype, "remove", null);
-PersonController = __decorate([
+], DynamicModuleController.prototype, "remove", null);
+DynamicModuleController = __decorate([
     (0, common_1.Controller)({
         version: '1',
-        path: 'person',
+        path: 'dynamic-module',
     }),
-    __param(0, (0, common_1.Inject)('zxp')),
-    __param(1, (0, common_1.Inject)('zxp2')),
-    __param(2, (0, common_1.Inject)('zxp3')),
-    __param(3, (0, common_1.Inject)('async')),
-    __metadata("design:paramtypes", [person_service_1.PersonService, Array, String, String, config_service_1.ConfigService])
-], PersonController);
-exports.PersonController = PersonController;
-//# sourceMappingURL=person.controller.js.map
+    __param(1, (0, common_1.Inject)('CONFIG_OPTIONS')),
+    __metadata("design:paramtypes", [dynamic_module_service_1.DynamicModuleService, Object])
+], DynamicModuleController);
+exports.DynamicModuleController = DynamicModuleController;
+//# sourceMappingURL=dynamic-module.controller.js.map

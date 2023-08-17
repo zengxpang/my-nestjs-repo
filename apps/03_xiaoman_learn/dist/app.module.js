@@ -12,11 +12,19 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const person_module_1 = require("./person/person.module");
 const config_module_1 = require("./config/config.module");
+const dynamic_module_module_1 = require("./dynamic-module/dynamic-module.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [person_module_1.PersonModule, config_module_1.ConfigModule],
+        imports: [
+            person_module_1.PersonModule,
+            config_module_1.ConfigModule,
+            dynamic_module_module_1.DynamicModuleModule.register({
+                name: '我是动态模块',
+                age: 19,
+            }),
+        ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

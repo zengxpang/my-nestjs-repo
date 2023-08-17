@@ -15,7 +15,33 @@ let PersonModule = class PersonModule {
 PersonModule = __decorate([
     (0, common_1.Module)({
         controllers: [person_controller_1.PersonController],
-        providers: [person_service_1.PersonService]
+        providers: [
+            {
+                provide: 'zxp',
+                useClass: person_service_1.PersonService,
+            },
+            {
+                provide: 'zxp2',
+                useValue: ['A', 'B', 'C', 'D', 'E'],
+            },
+            {
+                provide: 'zxp3',
+                inject: ['zxp2'],
+                useFactory: (zxp2) => {
+                    return zxp2.join(',');
+                },
+            },
+            {
+                provide: 'async',
+                useFactory: async () => {
+                    return new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            resolve('async');
+                        }, 1000);
+                    });
+                },
+            },
+        ],
     })
 ], PersonModule);
 exports.PersonModule = PersonModule;

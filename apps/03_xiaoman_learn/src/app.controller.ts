@@ -1,13 +1,26 @@
-import { Body, Controller, Get, Post, Req, Res, Session } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Post,
+  Query,
+  Req,
+  Res,
+  Session,
+} from '@nestjs/common';
 import { AppService } from './app.service';
 import * as svgCaptcha from 'svg-captcha';
+import { ConfigService } from './config/config.service';
 
 @Controller({
   version: '1',
   path: 'app',
 })
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly configService: ConfigService,
+  ) {}
 
   // @Get()
   // find(@Request() req) {
@@ -16,12 +29,13 @@ export class AppController {
   //   };
   // }
 
-  // @Get('test')
-  // find(@Query() query) {
-  //   return {
-  //     code: 200,
-  //   };
-  // }
+  @Get('test')
+  find(@Query() query) {
+    return {
+      code: 200,
+      data: this.configService.create('database'),
+    };
+  }
 
   // @Get(':id')
   // findId(@Request() req) {

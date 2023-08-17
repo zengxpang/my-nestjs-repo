@@ -16,9 +16,17 @@ exports.AppController = void 0;
 const common_1 = require("@nestjs/common");
 const app_service_1 = require("./app.service");
 const svgCaptcha = require("svg-captcha");
+const config_service_1 = require("./config/config.service");
 let AppController = class AppController {
-    constructor(appService) {
+    constructor(appService, configService) {
         this.appService = appService;
+        this.configService = configService;
+    }
+    find(query) {
+        return {
+            code: 200,
+            data: this.configService.create('database'),
+        };
     }
     createCaptcha(req, res) {
         const captcha = svgCaptcha.createMathExpr({
@@ -49,6 +57,13 @@ let AppController = class AppController {
     }
 };
 __decorate([
+    (0, common_1.Get)('test'),
+    __param(0, (0, common_1.Query)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], AppController.prototype, "find", null);
+__decorate([
     (0, common_1.Get)('captcha'),
     __param(0, (0, common_1.Req)()),
     __param(1, (0, common_1.Res)()),
@@ -69,7 +84,8 @@ AppController = __decorate([
         version: '1',
         path: 'app',
     }),
-    __metadata("design:paramtypes", [app_service_1.AppService])
+    __metadata("design:paramtypes", [app_service_1.AppService,
+        config_service_1.ConfigService])
 ], AppController);
 exports.AppController = AppController;
 //# sourceMappingURL=app.controller.js.map
