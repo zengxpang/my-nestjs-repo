@@ -8,7 +8,7 @@ export default defineConfig({
   request: {},
   proxy: {
     '/api': {
-      target: 'http://192.168.2.33:3000/v1/app/',
+      target: 'http://192.168.2.33:3000/v1/',
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
     },
@@ -35,6 +35,11 @@ export default defineConfig({
       name: '登录验证',
       path: '/captcha',
       component: './Captcha',
+    },
+    {
+      name: '文件上传',
+      path: '/upload',
+      component: './TheUpload',
     },
   ],
   npmClient: 'pnpm',

@@ -5,6 +5,7 @@ import { PersonModule } from './person/person.module';
 import { ConfigModule } from './config/config.module';
 import { DynamicModuleModule } from './dynamic-module/dynamic-module.module';
 import { TheMiddlewareModule } from './the-middleware/the-middleware.module';
+import { TheUploadModule } from './the-upload/the-upload.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { TheMiddlewareModule } from './the-middleware/the-middleware.module';
       age: 19,
     }),
     TheMiddlewareModule,
+    TheUploadModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -8,6 +8,7 @@ async function bootstrap() {
   app.enableVersioning({
     type: VersioningType.URI,
   });
+  app.enableCors(); // enable cors
   app.use(
     session({
       secret: 'my-secret',

@@ -16,12 +16,12 @@ const Captcha = (props: ICaptchaProps) => {
 
   const { loading: captchaLoading } = useRequest(
     {
-      url: '/captcha',
+      url: '/app/captcha',
       method: 'get',
     },
     {
       onSuccess: () => {
-        setCaptchaUrl('/api/captcha');
+        setCaptchaUrl('/api/app/captcha');
       },
     },
   );
@@ -31,7 +31,7 @@ const Captcha = (props: ICaptchaProps) => {
     password: string;
     captcha: string;
   }) => {
-    await request('/login', {
+    await request('/app/login', {
       method: 'post',
       data: values,
     });
