@@ -12,6 +12,7 @@ import {
   FileValidator,
   HttpStatus,
   HttpException,
+  Res,
 } from '@nestjs/common';
 import { TheUploadService } from './the-upload.service';
 import {
@@ -23,8 +24,15 @@ import {
 import { storage } from './storage';
 import { FileSizeValidationPipe } from './file-size-validation.pipe';
 import { MyFileValidator } from './myFileValidator';
+import * as path from 'path';
+import { tar, zip } from 'compressing';
 
-@Controller('the-upload')
+import type { Response } from 'express';
+
+@Controller({
+  version: '1',
+  path: 'the-upload',
+})
 export class TheUploadController {
   constructor(private readonly theUploadService: TheUploadService) {}
 
@@ -109,4 +117,28 @@ export class TheUploadController {
   //   console.log('body', body);
   //   console.log('files', files);
   // }
+
+  // 下载图片
+  @Get('export')
+  download(@Res() res: Response) {
+    const url = path.join(
+      process.cwd(),
+      'my-uploads/xxx-1692325592757-137890621-21201679990994_.pic.jpg',
+    );
+    res.download(url);
+  }
+
+  // 使用文件流下载图片
+  @Get('stream')
+  async downloadStream(@Res() res: Response) {
+    const url = path.join(
+      process.cwd(),
+      'my-uploads/xxx-1692325592757-137890621-21201679990994_.pic.jpg',
+    );
+    const tarStream = new zip.Stream();
+    await tarStream.addEntry(url);
+    res.setHeader('Content-Type', 'application/octet-stream');
+    res.setHeader('Content-Disposition', `attachment; filename=zxp`);
+    tarStream.pipe(res);
+  }
 }
