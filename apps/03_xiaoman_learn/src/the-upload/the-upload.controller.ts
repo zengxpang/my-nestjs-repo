@@ -14,6 +14,7 @@ import {
   FileInterceptor,
   FilesInterceptor,
 } from '@nestjs/platform-express';
+import { storage } from './storage';
 
 @Controller('the-upload')
 export class TheUploadController {
@@ -38,7 +39,6 @@ export class TheUploadController {
 
   // 多文件上传
   @Post('album2')
-
   // 文件名单个字段
   // @UseInterceptors(
   //   FilesInterceptor('album2', 3, {
@@ -69,14 +69,15 @@ export class TheUploadController {
   // 文件名任意字段
   @UseInterceptors(
     AnyFilesInterceptor({
-      dest: 'uploads',
+      // dest: 'uploads'
+      storage,
     }),
   )
   uploadAnyFiles(
     @UploadedFiles() files: Array<Express.Multer.File>,
     @Body() body,
   ) {
-    console.log('body', body);
-    console.log('files', files);
+    // console.log('body', body);
+    // console.log('files', files);
   }
 }
