@@ -25,7 +25,6 @@ import { storage } from './storage';
 import { FileSizeValidationPipe } from './file-size-validation.pipe';
 import { MyFileValidator } from './myFileValidator';
 import * as path from 'path';
-import { tar, zip } from 'compressing';
 
 import type { Response } from 'express';
 
@@ -131,14 +130,9 @@ export class TheUploadController {
   // 使用文件流下载图片
   @Get('stream')
   async downloadStream(@Res() res: Response) {
-    const url = path.join(
-      process.cwd(),
-      'my-uploads/xxx-1692325592757-137890621-21201679990994_.pic.jpg',
-    );
-    const tarStream = new zip.Stream();
-    await tarStream.addEntry(url);
+    const tarStream = await this.theUploadService.stream();
     res.setHeader('Content-Type', 'application/octet-stream');
-    res.setHeader('Content-Disposition', `attachment; filename=zxp`);
+    res.setHeader('Content-Disposition', `attachment; filename=zxp.zip`);
     tarStream.pipe(res);
   }
 }

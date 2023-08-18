@@ -1,7 +1,7 @@
 import { request } from '@@/plugin-request';
 import { InboxOutlined } from '@ant-design/icons';
 import type { UploadProps } from 'antd';
-import { Button, message, Space, Upload } from 'antd';
+import { Button, Space, Upload, message } from 'antd';
 
 const { Dragger } = Upload;
 
@@ -33,16 +33,21 @@ const TheUpload = () => {
   };
 
   const handleDownZip = async () => {
-    // 因为返回的是文件流，我们只接fetch转blob执行
-    const res = await fetch('/the-upload/stream').then((res) =>
-      res.arrayBuffer(),
+    const res = await request('/the-upload/stream', {
+      method: 'get',
+      responseType: 'blob',
+    });
+    const url = URL.createObjectURL(
+      new Blob([res], {
+        // type: 'application/zip',
+      }),
     );
-    console.log(res);
     const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([res]));
+    a.href = url;
     a.download = 'zxp.zip';
     a.click();
-    //todo  下载的压缩包出错解压不了
+    // 释放内存
+    URL.revokeObjectURL(url);
     message.success('下载压缩包成功');
   };
 
