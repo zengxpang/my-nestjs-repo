@@ -610,6 +610,7 @@ importers:
       jest: 29.5.0
       mysql2: ^3.6.0
       prettier: ^2.3.2
+      redis: ^4.6.7
       reflect-metadata: ^0.1.13
       rxjs: ^7.2.0
       source-map-support: ^0.5.20
@@ -630,9 +631,10 @@ importers:
       class-transformer: 0.5.1
       class-validator: 0.14.0
       mysql2: 3.6.0
+      redis: 4.6.7
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
-      typeorm: 0.3.17_3odyfuz4qdbmzsuotcecx23t3a
+      typeorm: 0.3.17_4hgqhcz5gf42uulxasmeus7lcu
     devDependencies:
       '@nestjs/cli': 9.5.0
       '@nestjs/schematics': 9.2.0_cabtoo4gjaliypd46lmutxfham
@@ -4085,7 +4087,7 @@ packages:
       '@nestjs/core': 9.4.3_c4fgdp752ib7dsgrlnt7fswfce
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
-      typeorm: 0.3.17_3odyfuz4qdbmzsuotcecx23t3a
+      typeorm: 0.3.17_4hgqhcz5gf42uulxasmeus7lcu
       uuid: 9.0.0
     dev: false
 
