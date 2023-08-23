@@ -5,9 +5,10 @@ import { Button, Space, Upload, message } from 'antd';
 
 const { Dragger } = Upload;
 
-const props: UploadProps = {
+const uploadsProps: UploadProps = {
   name: 'xxx',
   multiple: true,
+  capture: false,
   action: 'http://192.168.2.33:3000/v1/the-upload/album2',
   onChange(info) {
     const { status } = info.file;
@@ -23,7 +24,6 @@ const props: UploadProps = {
   onDrop(e) {
     console.log('Dropped files', e.dataTransfer.files);
   },
-  method: 'post',
 };
 
 const TheUpload = () => {
@@ -53,7 +53,7 @@ const TheUpload = () => {
 
   return (
     <Space direction={'vertical'}>
-      <Dragger {...props}>
+      <Dragger {...uploadsProps}>
         <p className="ant-upload-drag-icon">
           <InboxOutlined />
         </p>

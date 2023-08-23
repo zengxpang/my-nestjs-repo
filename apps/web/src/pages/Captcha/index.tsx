@@ -6,7 +6,7 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 import { LoginForm, ProFormText } from '@ant-design/pro-components';
-import { Button, Form, Image, Space, Spin, message } from 'antd';
+import { Button, Form, Space, Spin, message } from 'antd';
 import { useState } from 'react';
 
 interface ICaptchaProps {}
@@ -81,7 +81,7 @@ const Captcha = (props: ICaptchaProps) => {
         <Form.Item>
           <Space>
             <Spin spinning={captchaLoading}>
-              <Image src={captchaUrl} alt={'captcha'} preview={false} />
+              <img src={captchaUrl} alt={'captcha'} />
             </Spin>
             <Button type="primary" onClick={handleResetCaptcha}>
               刷新验证码

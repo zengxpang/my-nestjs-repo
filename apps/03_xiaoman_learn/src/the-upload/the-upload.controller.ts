@@ -63,20 +63,20 @@ export class TheUploadController {
   upload2(
     @UploadedFiles(
       new ParseFilePipe({
-        // exceptionFactory: (errors) => {
-        //   throw new HttpException('文件大小超过10k', HttpStatus.BAD_REQUEST);
-        // },
+        exceptionFactory: (errors) => {
+          throw new HttpException('文件大小超过100k', HttpStatus.BAD_REQUEST);
+        },
         validators: [
           // 1 内置验证器
-          // new MaxFileSizeValidator({
-          //   maxSize: 10 * 1024,
-          // }),
-          // new FileTypeValidator({
-          //   fileType: 'image/jpeg',
-          // }),
+          new MaxFileSizeValidator({
+            maxSize: 100 * 1024,
+          }),
+          new FileTypeValidator({
+            fileType: 'image/jpeg',
+          }),
 
           // 2 自定义验证器
-          new MyFileValidator({}),
+          // new MyFileValidator({}),
         ],
       }),
     )
