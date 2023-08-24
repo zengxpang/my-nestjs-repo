@@ -75,7 +75,7 @@ export class AppController {
 
   @Get('captcha')
   createCaptcha(@Req() req, @Res() res) {
-    const captcha = svgCaptcha.createMathExpr({
+    const captcha = svgCaptcha.create({
       size: 4,
       fontSize: 30,
       width: 100,

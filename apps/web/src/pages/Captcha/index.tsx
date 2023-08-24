@@ -88,7 +88,7 @@ const Captcha = (props: ICaptchaProps) => {
             </Button>
           </Space>
         </Form.Item>
-        <ProFormText.Password
+        <ProFormText
           name="captcha"
           fieldProps={{
             size: 'large',

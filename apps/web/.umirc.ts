@@ -27,9 +27,9 @@ export default defineConfig({
       component: './Home',
     },
     {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
+      name: '双Token验证',
+      path: '/doubleToken',
+      component: './DoubleToken',
     },
     {
       name: '登录验证',
