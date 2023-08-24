@@ -8,7 +8,7 @@ export default defineConfig({
   request: {},
   proxy: {
     '/api': {
-      target: 'http://192.168.2.33:3000/v1/',
+      target: 'http://localhost:3000/v1/',
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
     },
