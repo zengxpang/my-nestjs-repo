@@ -12,6 +12,11 @@ export default defineConfig({
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
     },
+    '/v': {
+      target: 'http://localhost:3000/',
+      changeOrigin: true,
+      pathRewrite: { '^/v': '' },
+    },
   },
   layout: {
     title: '@umijs/max',
@@ -40,6 +45,11 @@ export default defineConfig({
       name: '文件上传',
       path: '/upload',
       component: './TheUpload',
+    },
+    {
+      name: '邮箱验证码',
+      path: '/email',
+      component: './Email',
     },
   ],
   npmClient: 'pnpm',

@@ -28,12 +28,12 @@ const uploadsProps: UploadProps = {
 
 const TheUpload = () => {
   const handleDownload = async () => {
-    await request('/the-upload/export');
+    await request('/api/the-upload/export');
     message.success('下载成功');
   };
 
   const handleDownZip = async () => {
-    const res = await request('/the-upload/stream', {
+    const res = await request('/api/the-upload/stream', {
       method: 'get',
       responseType: 'blob',
     });

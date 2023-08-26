@@ -8,7 +8,7 @@ const DoubleToken = () => {
   const [test2, setTest2] = useState<string>('');
 
   const handleLogin = () => {
-    request('/user/login', {
+    request('/api/user/login', {
       method: 'post',
       data: {
         username: 'zxp',
@@ -27,7 +27,7 @@ const DoubleToken = () => {
   };
 
   const handleTest = () => {
-    request('/user/test', {
+    request('/api/user/test', {
       headers: {
         authorization: 'Bearer ' + localStorage.getItem('access_token'),
       },

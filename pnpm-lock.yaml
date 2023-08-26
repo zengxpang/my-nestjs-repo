@@ -71,7 +71,7 @@ importers:
       prettier: 2.8.8
       source-map-support: 0.5.21
       supertest: 6.3.3
-      ts-jest: 29.1.0_tobmchb5uviuq5lwsinkw5fvje
+      ts-jest: 29.1.0_xjbnpwnymlhilmvxmngebebk4a
       ts-loader: 9.4.4_3awpbmcbe6jeqdh7tme6jrzbgi
       ts-node: 10.9.1_s5yysxq5pekb2utcoyjmfmampi
       tsconfig-paths: 4.2.0
@@ -841,7 +841,7 @@ importers:
       prettier: 2.8.8
       source-map-support: 0.5.21
       supertest: 6.3.3
-      ts-jest: 29.1.0_yhcwpgjii2rloabi7qe3mzhgua
+      ts-jest: 29.1.0_tiloc3ejst55n76oty5rbi22ra
       ts-loader: 9.4.4_wlox7xpecxj4rvkt6b6o7frtlu
       ts-node: 10.9.1_possjyqi7ntvuzt4u4hxcbjxeu
       tsconfig-paths: 4.2.0
@@ -887,11 +887,96 @@ importers:
       rxjs: 7.8.1
     devDependencies:
       '@nestjs/cli': 9.5.0
+      '@nestjs/schematics': 9.2.0_typescript@5.1.6
+      '@nestjs/testing': 9.4.3_c2suh6ay6qzrduk6sfgpcvxpvi
+      '@types/express': 4.17.17
+      '@types/jest': 29.5.1
+      '@types/node': 18.16.12
+      '@types/supertest': 2.0.12
+      '@typescript-eslint/eslint-plugin': 5.62.0_n7tgeqprp5l4supvxgeyjtyz54
+      '@typescript-eslint/parser': 5.59.2_qj3u6ezxe2airdzjq3nyoxe24m
+      eslint: 8.47.0
+      eslint-config-prettier: 8.8.0_eslint@8.47.0
+      eslint-plugin-prettier: 4.2.1_6nqcmxhxbzmyjyegv3wbgimn7m
+      jest: 29.5.0_jfk27zzpxfjmibypqi22cmssme
+      prettier: 2.8.8
+      source-map-support: 0.5.21
+      supertest: 6.3.3
+      ts-jest: 29.1.0_tiloc3ejst55n76oty5rbi22ra
+      ts-loader: 9.4.4_wlox7xpecxj4rvkt6b6o7frtlu
+      ts-node: 10.9.1_possjyqi7ntvuzt4u4hxcbjxeu
+      tsconfig-paths: 4.2.0
+      typescript: 5.1.6
+
+  apps/config-test:
+    specifiers:
+      dotenv: ^16.3.1
+      js-yaml: ^4.1.0
+    dependencies:
+      dotenv: 16.3.1
+      js-yaml: 4.1.0
+
+  apps/email-login-example:
+    specifiers:
+      '@nestjs/cli': ^9.0.0
+      '@nestjs/common': ^9.0.0
+      '@nestjs/config': ^3.0.0
+      '@nestjs/core': ^9.0.0
+      '@nestjs/mapped-types': '*'
+      '@nestjs/platform-express': ^9.0.0
+      '@nestjs/schematics': ^9.0.0
+      '@nestjs/testing': ^9.0.0
+      '@nestjs/typeorm': ^10.0.0
+      '@types/express': ^4.17.13
+      '@types/jest': 29.5.1
+      '@types/node': 18.16.12
+      '@types/nodemailer': ^6.4.9
+      '@types/supertest': ^2.0.11
+      '@typescript-eslint/eslint-plugin': ^5.0.0
+      '@typescript-eslint/parser': ^5.0.0
+      class-transformer: ^0.5.1
+      class-validator: ^0.14.0
+      eslint: ^8.0.1
+      eslint-config-prettier: ^8.3.0
+      eslint-plugin-prettier: ^4.0.0
+      jest: 29.5.0
+      mysql2: ^3.6.0
+      nodemailer: ^6.9.4
+      prettier: ^2.3.2
+      redis: ^4.6.7
+      reflect-metadata: ^0.1.13
+      rxjs: ^7.2.0
+      source-map-support: ^0.5.20
+      supertest: ^6.1.3
+      ts-jest: 29.1.0
+      ts-loader: ^9.2.3
+      ts-node: ^10.0.0
+      tsconfig-paths: 4.2.0
+      typeorm: ^0.3.17
+      typescript: ^5.0.0
+    dependencies:
+      '@nestjs/common': 9.4.3_j3td4gnlgk75ora6o6suo62byy
+      '@nestjs/config': 3.0.0_dk4u2lifzsfgc7wmi6hz7mkv5a
+      '@nestjs/core': 9.4.3_c4fgdp752ib7dsgrlnt7fswfce
+      '@nestjs/mapped-types': 2.0.2_i7luks5ses66diusqohyeqc2yi
+      '@nestjs/platform-express': 9.4.3_vw2vky2jc6gkm6gj7lzrgmojyi
+      '@nestjs/typeorm': 10.0.0_nktyjm3hkn2boz7s6l2p266t2u
+      class-transformer: 0.5.1
+      class-validator: 0.14.0
+      mysql2: 3.6.0
+      nodemailer: 6.9.4
+      redis: 4.6.7
+      reflect-metadata: 0.1.13
+      rxjs: 7.8.1
+      typeorm: 0.3.17_4hgqhcz5gf42uulxasmeus7lcu
+    devDependencies:
+      '@nestjs/cli': 9.5.0
       '@nestjs/schematics': 9.2.0_agrgdhceu4ykhvsul7qhqysi6e
       '@nestjs/testing': 9.4.3_c2suh6ay6qzrduk6sfgpcvxpvi
       '@types/express': 4.17.17
       '@types/jest': 29.5.1
       '@types/node': 18.16.12
+      '@types/nodemailer': 6.4.9
       '@types/supertest': 2.0.12
       '@typescript-eslint/eslint-plugin': 5.62.0_n7tgeqprp5l4supvxgeyjtyz54
       '@typescript-eslint/parser': 5.59.2_qj3u6ezxe2airdzjq3nyoxe24m
@@ -907,14 +992,6 @@ importers:
       ts-node: 10.9.1_possjyqi7ntvuzt4u4hxcbjxeu
       tsconfig-paths: 4.2.0
       typescript: 5.1.6
-
-  apps/config-test:
-    specifiers:
-      dotenv: ^16.3.1
-      js-yaml: ^4.1.0
-    dependencies:
-      dotenv: 16.3.1
-      js-yaml: 4.1.0
 
   apps/emial-test:
     specifiers:
@@ -4322,6 +4399,7 @@ packages:
       rxjs: 7.8.1
       tslib: 2.5.3
       uid: 2.0.2
+    dev: false
 
   /@nestjs/common/9.4.3_j3td4gnlgk75ora6o6suo62byy:
     resolution: {integrity: sha512-Gd6D4IaYj01o14Bwv81ukidn4w3bPHCblMUq+SmUmWLyosK+XQmInCS09SbDDZyL8jy86PngtBLTdhJ2bXSUig==}
@@ -4346,6 +4424,19 @@ packages:
       rxjs: 7.8.1
       tslib: 2.5.3
       uid: 2.0.2
+
+  /@nestjs/config/3.0.0_dk4u2lifzsfgc7wmi6hz7mkv5a:
+    resolution: {integrity: sha512-fzASk1Uv6AjdE6uA1na8zpqRCXAhRpcfgpCVv3SAKlgJ3VR3bEjcI4G17WHLgLBsmPzI1ofdkSI451WLD1F1Rw==}
+    peerDependencies:
+      '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
+      reflect-metadata: ^0.1.13
+    dependencies:
+      '@nestjs/common': 9.4.3_j3td4gnlgk75ora6o6suo62byy
+      dotenv: 16.1.4
+      dotenv-expand: 10.0.0
+      lodash: 4.17.21
+      reflect-metadata: 0.1.13
+      uuid: 9.0.0
     dev: false
 
   /@nestjs/config/3.0.0_iausrcpra5pqz5uiuwhkzwo5zq:
@@ -4411,7 +4502,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 9.4.3_atc7tu2sld2m3nk4hmwkqn6qde
+      '@nestjs/common': 9.4.3_j3td4gnlgk75ora6o6suo62byy
       '@nestjs/platform-express': 9.4.3_vw2vky2jc6gkm6gj7lzrgmojyi
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
@@ -4509,7 +4600,7 @@ packages:
       '@nestjs/common': ^9.0.0
       '@nestjs/core': ^9.0.0
     dependencies:
-      '@nestjs/common': 9.4.3_atc7tu2sld2m3nk4hmwkqn6qde
+      '@nestjs/common': 9.4.3_j3td4gnlgk75ora6o6suo62byy
       '@nestjs/core': 9.4.3_c4fgdp752ib7dsgrlnt7fswfce
       body-parser: 1.20.2
       cors: 2.8.5
@@ -4663,7 +4754,7 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 9.4.3_atc7tu2sld2m3nk4hmwkqn6qde
+      '@nestjs/common': 9.4.3_j3td4gnlgk75ora6o6suo62byy
       '@nestjs/core': 9.4.3_c4fgdp752ib7dsgrlnt7fswfce
       '@nestjs/platform-express': 9.4.3_vw2vky2jc6gkm6gj7lzrgmojyi
       tslib: 2.5.3
@@ -4682,7 +4773,7 @@ packages:
       '@nestjs/core': 9.4.3_c4fgdp752ib7dsgrlnt7fswfce
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
-      typeorm: 0.3.17_3odyfuz4qdbmzsuotcecx23t3a
+      typeorm: 0.3.17_4hgqhcz5gf42uulxasmeus7lcu
       uuid: 9.0.0
     dev: false
 
@@ -5385,6 +5476,12 @@ packages:
 
   /@types/node/20.5.4:
     resolution: {integrity: sha512-Y9vbIAoM31djQZrPYjpTLo0XlaSwOIsrlfE3LpulZeRblttsLQRFRlBAppW0LOxyT3ALj2M5vU1ucQQayQH3jA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@types/node/-/node-20.5.4.tgz}
+
+  /@types/nodemailer/6.4.9:
+    resolution: {integrity: sha512-XYG8Gv+sHjaOtUpiuytahMy2mM3rectgroNbs6R3djZEKmPNiIJwe9KqOJBGzKKnNZNKvnuvmugBgpq3w/S0ig==}
+    dependencies:
+      '@types/node': 20.5.4
+    dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -7379,7 +7476,7 @@ packages:
       babel-preset-current-node-syntax: 1.0.1_@babel+core@7.22.9
 
   /balanced-match/1.0.2:
-    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/balanced-match/-/balanced-match-1.0.2.tgz}
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
   /balanced-match/2.0.0:
     resolution: {integrity: sha512-1ugUSr8BHXRnK23KfuYS+gVMC3LB8QGH9W1iGtDPsNWoQbgtXSExkBu2aDR4epiGWZOjZsj6lDl/N/AqqTC3UA==}
@@ -7472,7 +7569,7 @@ packages:
       big-integer: 1.6.51
 
   /brace-expansion/1.1.11:
-    resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/brace-expansion/-/brace-expansion-1.1.11.tgz}
+    resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
@@ -7619,7 +7716,7 @@ packages:
     dev: false
 
   /buffer/5.7.1:
-    resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/buffer/-/buffer-5.7.1.tgz}
+    resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
@@ -8032,7 +8129,7 @@ packages:
     dev: false
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/concat-map/-/concat-map-0.0.1.tgz}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
   /concat-stream/1.6.2:
     resolution: {integrity: sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==}
@@ -8671,17 +8768,17 @@ packages:
     dev: false
 
   /dotenv-expand/10.0.0:
-    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/dotenv-expand/-/dotenv-expand-10.0.0.tgz}
+    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
     engines: {node: '>=12'}
     dev: false
 
   /dotenv/16.1.4:
-    resolution: {integrity: sha512-m55RtE8AsPeJBpOIFKihEmqUcoVncQIwo7x9U8ZwLEZw9ZpXboz2c+rvog+jUaJvVrZ5kBOeYQBX5+8Aa/OZQw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/dotenv/-/dotenv-16.1.4.tgz}
+    resolution: {integrity: sha512-m55RtE8AsPeJBpOIFKihEmqUcoVncQIwo7x9U8ZwLEZw9ZpXboz2c+rvog+jUaJvVrZ5kBOeYQBX5+8Aa/OZQw==}
     engines: {node: '>=12'}
     dev: false
 
   /dotenv/16.3.1:
-    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/dotenv/-/dotenv-16.3.1.tgz}
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
     engines: {node: '>=12'}
     dev: false
 
@@ -10638,7 +10735,7 @@ packages:
     engines: {node: '>=14.18.0'}
 
   /iconv-lite/0.4.24:
-    resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/iconv-lite/-/iconv-lite-0.4.24.tgz}
+    resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
     engines: {node: '>=0.10.0'}
     dependencies:
       safer-buffer: 2.1.2
@@ -11965,7 +12062,7 @@ packages:
     dev: true
 
   /levn/0.4.1:
-    resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/levn/-/levn-0.4.1.tgz}
+    resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
     dependencies:
       prelude-ls: 1.2.1
@@ -12208,7 +12305,7 @@ packages:
     resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
 
   /lodash/4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/lodash/-/lodash-4.17.21.tgz}
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   /log-symbols/4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/log-symbols/-/log-symbols-4.1.0.tgz}
@@ -12339,7 +12436,7 @@ packages:
     dev: true
 
   /make-error/1.3.6:
-    resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/make-error/-/make-error-1.3.6.tgz}
+    resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
 
   /makeerror/1.0.12:
     resolution: {integrity: sha512-JmqCvUhmt43madlpFzG4BQzG2Z3m6tvQDNKdClZnO3VbIudJYmxsT0FNJMeiB2+JTSlTQTSbU8QdesVmwJcmLg==}
@@ -12478,7 +12575,7 @@ packages:
     dev: false
 
   /minimatch/3.1.2:
-    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/minimatch/-/minimatch-3.1.2.tgz}
+    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
       brace-expansion: 1.1.11
 
@@ -15846,7 +15943,7 @@ packages:
     dev: true
 
   /source-map-support/0.5.21:
-    resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/source-map-support/-/source-map-support-0.5.21.tgz}
+    resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
     dependencies:
       buffer-from: 1.1.2
       source-map: 0.6.1
@@ -15856,7 +15953,7 @@ packages:
     engines: {node: '>=0.10.0'}
 
   /source-map/0.7.4:
-    resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/source-map/-/source-map-0.7.4.tgz}
+    resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==}
     engines: {node: '>= 8'}
 
   /spdx-correct/3.2.0:
@@ -16685,6 +16782,40 @@ packages:
       yargs-parser: 21.1.1
     dev: true
 
+  /ts-jest/29.1.0_xjbnpwnymlhilmvxmngebebk4a:
+    resolution: {integrity: sha512-ZhNr7Z4PcYa+JjMl62ir+zPiNJfXJN6E8hSLnaUKhOgqcn8vb3e537cpkd0FuAfRK3sR1LSqM1MOhliXNgOFPA==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    hasBin: true
+    peerDependencies:
+      '@babel/core': '>=7.0.0-beta.0 <8'
+      '@jest/types': ^29.0.0
+      babel-jest: ^29.0.0
+      esbuild: '*'
+      jest: ^29.0.0
+      typescript: '>=4.3 <6'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@jest/types':
+        optional: true
+      babel-jest:
+        optional: true
+      esbuild:
+        optional: true
+    dependencies:
+      '@babel/core': 7.22.9
+      bs-logger: 0.2.6
+      fast-json-stable-stringify: 2.1.0
+      jest: 29.5.0_jfk27zzpxfjmibypqi22cmssme
+      jest-util: 29.6.1
+      json5: 2.2.3
+      lodash.memoize: 4.1.2
+      make-error: 1.3.6
+      semver: 7.5.4
+      typescript: 5.0.4
+      yargs-parser: 21.1.1
+    dev: true
+
   /ts-jest/29.1.0_yhcwpgjii2rloabi7qe3mzhgua:
     resolution: {integrity: sha512-ZhNr7Z4PcYa+JjMl62ir+zPiNJfXJN6E8hSLnaUKhOgqcn8vb3e537cpkd0FuAfRK3sR1LSqM1MOhliXNgOFPA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -16809,7 +16940,6 @@ packages:
       typescript: 5.1.6
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
-    dev: true
 
   /ts-node/10.9.1_s5yysxq5pekb2utcoyjmfmampi:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/ts-node/-/ts-node-10.9.1.tgz}
@@ -16840,6 +16970,7 @@ packages:
       typescript: 5.0.4
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
+    dev: true
 
   /tsconfig-paths-webpack-plugin/4.0.1:
     resolution: {integrity: sha512-m5//KzLoKmqu2MVix+dgLKq70MnFi8YL8sdzQZ6DblmCdfuq/y3OqvJd5vMndg2KEVCOeNz8Es4WVZhYInteLw==}
@@ -16878,13 +17009,13 @@ packages:
     dev: true
 
   /tslib/1.14.1:
-    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/tslib/-/tslib-1.14.1.tgz}
+    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
 
   /tslib/2.5.3:
     resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
 
   /tslib/2.6.1:
-    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/tslib/-/tslib-2.6.1.tgz}
+    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
 
   /tsutils/3.21.0:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
@@ -17126,8 +17257,8 @@ packages:
       mysql2: 3.6.0
       reflect-metadata: 0.1.13
       sha.js: 2.4.11
-      ts-node: 10.9.1_s5yysxq5pekb2utcoyjmfmampi
-      tslib: 2.5.3
+      ts-node: 10.9.1_possjyqi7ntvuzt4u4hxcbjxeu
+      tslib: 2.6.1
       uuid: 9.0.0
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -17206,8 +17337,8 @@ packages:
       redis: 4.6.7
       reflect-metadata: 0.1.13
       sha.js: 2.4.11
-      ts-node: 10.9.1_s5yysxq5pekb2utcoyjmfmampi
-      tslib: 2.5.3
+      ts-node: 10.9.1_possjyqi7ntvuzt4u4hxcbjxeu
+      tslib: 2.6.1
       uuid: 9.0.0
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -17229,7 +17360,6 @@ packages:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/typescript/-/typescript-5.1.6.tgz}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /uc.micro/1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
@@ -17465,7 +17595,7 @@ packages:
     engines: {node: '>= 0.4.0'}
 
   /uuid/9.0.0:
-    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/uuid/-/uuid-9.0.0.tgz}
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
     hasBin: true
     dev: false
 

@@ -19,7 +19,7 @@ export const layout = () => {
 
 export const request: RequestConfig = {
   timeout: 3000,
-  baseURL: '/api',
+  baseURL: '',
   requestInterceptors: [],
   responseInterceptors: [],
 };
