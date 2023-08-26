@@ -18,7 +18,7 @@ export const layout = () => {
 };
 
 export const request: RequestConfig = {
-  timeout: 3000,
+  timeout: 30000,
   baseURL: '',
   requestInterceptors: [],
   responseInterceptors: [],

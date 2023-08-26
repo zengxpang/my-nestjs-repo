@@ -51,6 +51,11 @@ export default defineConfig({
       path: '/email',
       component: './Email',
     },
+    {
+      name: '图片压缩',
+      path: '/compressImg',
+      component: './CompressImg',
+    },
   ],
   npmClient: 'pnpm',
 });

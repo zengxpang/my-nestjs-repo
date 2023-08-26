@@ -9,7 +9,7 @@ const uploadsProps: UploadProps = {
   name: 'xxx',
   multiple: true,
   capture: false,
-  action: 'http://192.168.2.33:3000/v1/the-upload/album2',
+  action: 'http://localhost:3000/v1/the-upload/album2',
   onChange(info) {
     const { status } = info.file;
     if (status !== 'uploading') {

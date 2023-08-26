@@ -11,6 +11,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './user/entities/user.entity';
 import { JwtModule } from '@nestjs/jwt';
 import { APP_PIPE } from '@nestjs/core';
+import { CompressModule } from './compress/compress.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { APP_PIPE } from '@nestjs/core';
         expiresIn: '30m',
       },
     }),
+    CompressModule,
   ],
   controllers: [AppController],
   providers: [
