@@ -28,9 +28,9 @@ async function test1() {
   console.log(user);
 }
 
-// test1().then((r) => {
-//   console.log(r);
-// });
+test1().then((r) => {
+  console.log(r);
+});
 
 async function test2() {
   const users = await prismaClient.user.create({
@@ -54,7 +54,7 @@ async function test2() {
 
   console.log(users);
 }
-// test2();
+test2();
 
 async function test3() {
   await prismaClient.post.update({
@@ -76,4 +76,4 @@ async function test4() {
   });
 }
 
-test4();
+// test4();
