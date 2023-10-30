@@ -107,19 +107,54 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
   Serializable: 'Serializable'
 });
 
-exports.Prisma.PostScalarFieldEnum = {
-  id: 'id',
-  title: 'title',
-  content: 'content',
-  tag: 'tag',
-  published: 'published',
-  authorId: 'authorId'
-};
-
 exports.Prisma.UserScalarFieldEnum = {
   id: 'id',
   email: 'email',
   name: 'name'
+};
+
+exports.Prisma.TestScalarFieldEnum = {
+  id: 'id',
+  aaa: 'aaa',
+  bbb: 'bbb',
+  ccc: 'ccc'
+};
+
+exports.Prisma.DepartmentScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  createTime: 'createTime',
+  updateTime: 'updateTime'
+};
+
+exports.Prisma.EmployeeScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  phone: 'phone',
+  departmentId: 'departmentId'
+};
+
+exports.Prisma.PostScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  content: 'content',
+  published: 'published'
+};
+
+exports.Prisma.TagScalarFieldEnum = {
+  id: 'id',
+  name: 'name'
+};
+
+exports.Prisma.TagOnPostsScalarFieldEnum = {
+  postId: 'postId',
+  tagId: 'tagId'
+};
+
+exports.Prisma.AAAScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  role: 'role'
 };
 
 exports.Prisma.SortOrder = {
@@ -131,11 +166,21 @@ exports.Prisma.NullsOrder = {
   first: 'first',
   last: 'last'
 };
-
+exports.EEE = exports.$Enums.EEE = {
+  BBB: 'BBB',
+  CCC: 'CCC',
+  DDD: 'DDD'
+};
 
 exports.Prisma.ModelName = {
+  User: 'User',
+  Test: 'Test',
+  Department: 'Department',
+  Employee: 'Employee',
   Post: 'Post',
-  User: 'User'
+  Tag: 'Tag',
+  TagOnPosts: 'TagOnPosts',
+  AAA: 'AAA'
 };
 
 /**
