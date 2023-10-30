@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>确认页面</title>
+  <script src="https://unpkg.com/axios@1.5.0/dist/axios.min.js"></script>
+</head>
+<style>
+    #info {
+        height: 400px;
+        line-height: 400px;
+        font-size: 20px;
+        padding: 20px;
+    }
+    #confirm, #cancel{
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #confirm {
+        background: #4285F7;
+    }
+</style>
+<body>
+<button id="admin">登录admin</button>
+<button id="user">登录user</button>
+
+<div id="info">
+  是否确认登录 zxp 网站？
+</div>
+<button id="confirm">确认登录</button>
+<button id="cancel">取消</button>
+<script>
+  const params = new URLSearchParams(window.location.search.slice(1));
+  const id = params.get('id')
+
+  let token = ''
+
+  document.getElementById('admin').addEventListener('click', () => {
+    axios.get('http://192.168.2.37:3000/login', {
+      params: {
+        username: 'admin',
+        password: '123456'
+      }
+    }).then(res => {
+      token = res.data.token;
+      alert('admin登录成功')
+    });
+  });
+
+  document.getElementById('user').addEventListener('click', () => {
+    axios.get('http://192.168.2.37:3000/login', {
+      params: {
+        username: 'user',
+        password: '123456'
+      }
+    }).then(res => {
+      token = res.data.token;
+      alert('user登录成功')
+    });
+  });
+
+
+  axios.get('http://192.168.2.37:3000/scan?id=' + id).catch(e => {
+    alert('二维码已过期');
+  });
+
+  document.getElementById('confirm').addEventListener('click', () => {
+    axios.get('http://192.168.2.37:3000/confirm?id=' + id,{
+      headers: {
+        Auth: token
+      }
+    }).catch(e => {
+      alert('二维码已过期');
+    });
+  });
+
+  document.getElementById('cancel').addEventListener('click', () => {
+    axios.get('http://192.168.2.37:3000/cancel?id=' + id).catch(e => {
+      alert('二维码已过期');
+    });
+  });
+
+</script>
+</body>
+</html>
