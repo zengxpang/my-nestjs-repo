@@ -714,7 +714,7 @@ importers:
       rxjs: 7.8.1
     devDependencies:
       '@nestjs/cli': 10.1.15
-      '@nestjs/schematics': 10.0.2_agrgdhceu4ykhvsul7qhqysi6e
+      '@nestjs/schematics': 10.0.2_typescript@5.1.6
       '@nestjs/testing': 10.2.1_oppwvmzqmoyrus4szkleue7n64
       '@types/express': 4.17.17
       '@types/jest': 29.5.4
@@ -1192,6 +1192,69 @@ importers:
       qrcode: 1.5.3
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
+    devDependencies:
+      '@nestjs/cli': 10.1.15
+      '@nestjs/schematics': 10.0.2_typescript@5.2.2
+      '@nestjs/testing': 10.2.1_oppwvmzqmoyrus4szkleue7n64
+      '@types/express': 4.17.17
+      '@types/jest': 29.5.4
+      '@types/node': 20.8.9
+      '@types/supertest': 2.0.12
+      '@typescript-eslint/eslint-plugin': 6.4.1_3nfsfemb7q2xel5teget2ysf4e
+      '@typescript-eslint/parser': 6.4.1_sf2ha5dxxfjuf3a4egfvu5wr24
+      eslint: 8.47.0
+      eslint-config-prettier: 9.0.0_eslint@8.47.0
+      eslint-plugin-prettier: 5.0.0_uyvdvlpviyvawi4o4rvt2srziy
+      jest: 29.5.0_ysaupbdedg2xuodbo5kq7ggmge
+      prettier: 3.0.2
+      source-map-support: 0.5.21
+      supertest: 6.3.3
+      ts-jest: 29.1.0_iq5n7lqt5lgobotj2eiby2n2b4
+      ts-loader: 9.4.4_dtthwp2bsqb7yvb7hoeealjg4i
+      ts-node: 10.9.1_ioij26y2bygwhayoisoayehmzu
+      tsconfig-paths: 4.2.0
+      typescript: 5.2.2
+
+  apps/18_nest-winston-test:
+    specifiers:
+      '@nestjs/cli': ^10.0.0
+      '@nestjs/common': ^10.0.0
+      '@nestjs/core': ^10.0.0
+      '@nestjs/platform-express': ^10.0.0
+      '@nestjs/schematics': ^10.0.0
+      '@nestjs/testing': ^10.0.0
+      '@types/express': ^4.17.17
+      '@types/jest': ^29.5.2
+      '@types/node': ^20.3.1
+      '@types/supertest': ^2.0.12
+      '@typescript-eslint/eslint-plugin': ^6.0.0
+      '@typescript-eslint/parser': ^6.0.0
+      chalk: '4'
+      dayjs: ^1.11.10
+      eslint: ^8.42.0
+      eslint-config-prettier: ^9.0.0
+      eslint-plugin-prettier: ^5.0.0
+      jest: ^29.5.0
+      prettier: ^3.0.0
+      reflect-metadata: ^0.1.13
+      rxjs: ^7.8.1
+      source-map-support: ^0.5.21
+      supertest: ^6.3.3
+      ts-jest: ^29.1.0
+      ts-loader: ^9.4.3
+      ts-node: ^10.9.1
+      tsconfig-paths: ^4.2.0
+      typescript: ^5.1.3
+      winston: ^3.11.0
+    dependencies:
+      '@nestjs/common': 10.2.1_atc7tu2sld2m3nk4hmwkqn6qde
+      '@nestjs/core': 10.2.1_wxeamgupywos7h66i2kssj73yi
+      '@nestjs/platform-express': 10.2.1_3aivuf2jcwvwso5c2274uvcofa
+      chalk: 4.1.2
+      dayjs: 1.11.10
+      reflect-metadata: 0.1.13
+      rxjs: 7.8.1
+      winston: 3.11.0
     devDependencies:
       '@nestjs/cli': 10.1.15
       '@nestjs/schematics': 10.0.2_acogjgahz3bdlhk7may5ikc22y
@@ -4380,15 +4443,15 @@ packages:
     dev: false
 
   /@grpc/grpc-js/1.9.2:
-    resolution: {integrity: sha512-Lf2pUhNTaviEdEaGgjU+29qw3arX7Qd/45q66F3z1EV5hroE6wM9xSHPvjB8EY+b1RmKZgwnLWXQorC6fZ9g5g==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-Lf2pUhNTaviEdEaGgjU+29qw3arX7Qd/45q66F3z1EV5hroE6wM9xSHPvjB8EY+b1RmKZgwnLWXQorC6fZ9g5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@grpc/grpc-js/-/grpc-js-1.9.2.tgz}
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.9
-      '@types/node': 20.5.4
+      '@types/node': 20.8.9
     dev: false
 
   /@grpc/proto-loader/0.7.9:
-    resolution: {integrity: sha512-YJsOehVXzgurc+lLAxYnlSMc1p/Gu6VAvnfx0ATi2nzvr0YZcjhmZDeY8SeAKv1M7zE3aEJH0Xo9mK1iZ8GYoQ==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-YJsOehVXzgurc+lLAxYnlSMc1p/Gu6VAvnfx0ATi2nzvr0YZcjhmZDeY8SeAKv1M7zE3aEJH0Xo9mK1iZ8GYoQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@grpc/proto-loader/-/proto-loader-0.7.9.tgz}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
@@ -5679,46 +5742,46 @@ packages:
     dev: false
 
   /@protobufjs/aspromise/1.1.2:
-    resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/aspromise/-/aspromise-1.1.2.tgz}
     dev: false
 
   /@protobufjs/base64/1.1.2:
-    resolution: {integrity: sha512-AZkcAA5vnN/v4PDqKyMR5lx7hZttPDgClv83E//FMNhR2TMcLUhfRUBHCmSl0oi9zMgDDqRUJkSxO3wm85+XLg==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-AZkcAA5vnN/v4PDqKyMR5lx7hZttPDgClv83E//FMNhR2TMcLUhfRUBHCmSl0oi9zMgDDqRUJkSxO3wm85+XLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/base64/-/base64-1.1.2.tgz}
     dev: false
 
   /@protobufjs/codegen/2.0.4:
-    resolution: {integrity: sha512-YyFaikqM5sH0ziFZCN3xDC7zeGaB/d0IUb9CATugHWbd1FRFwWwt4ld4OYMPWu5a3Xe01mGAULCdqhMlPl29Jg==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-YyFaikqM5sH0ziFZCN3xDC7zeGaB/d0IUb9CATugHWbd1FRFwWwt4ld4OYMPWu5a3Xe01mGAULCdqhMlPl29Jg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/codegen/-/codegen-2.0.4.tgz}
     dev: false
 
   /@protobufjs/eventemitter/1.1.0:
-    resolution: {integrity: sha512-j9ednRT81vYJ9OfVuXG6ERSTdEL1xVsNgqpkxMsbIabzSo3goCjDIveeGv5d03om39ML71RdmrGNjG5SReBP/Q==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-j9ednRT81vYJ9OfVuXG6ERSTdEL1xVsNgqpkxMsbIabzSo3goCjDIveeGv5d03om39ML71RdmrGNjG5SReBP/Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz}
     dev: false
 
   /@protobufjs/fetch/1.1.0:
-    resolution: {integrity: sha512-lljVXpqXebpsijW71PZaCYeIcE5on1w5DlQy5WH6GLbFryLUrBD4932W/E2BSpfRJWseIL4v/KPgBFxDOIdKpQ==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-lljVXpqXebpsijW71PZaCYeIcE5on1w5DlQy5WH6GLbFryLUrBD4932W/E2BSpfRJWseIL4v/KPgBFxDOIdKpQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/fetch/-/fetch-1.1.0.tgz}
     dependencies:
       '@protobufjs/aspromise': 1.1.2
       '@protobufjs/inquire': 1.1.0
     dev: false
 
   /@protobufjs/float/1.0.2:
-    resolution: {integrity: sha512-Ddb+kVXlXst9d+R9PfTIxh1EdNkgoRe5tOX6t01f1lYWOvJnSPDBlG241QLzcyPdoNTsblLUdujGSE4RzrTZGQ==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-Ddb+kVXlXst9d+R9PfTIxh1EdNkgoRe5tOX6t01f1lYWOvJnSPDBlG241QLzcyPdoNTsblLUdujGSE4RzrTZGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/float/-/float-1.0.2.tgz}
     dev: false
 
   /@protobufjs/inquire/1.1.0:
-    resolution: {integrity: sha512-kdSefcPdruJiFMVSbn801t4vFK7KB/5gd2fYvrxhuJYg8ILrmn9SKSX2tZdV6V+ksulWqS7aXjBcRXl3wHoD9Q==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-kdSefcPdruJiFMVSbn801t4vFK7KB/5gd2fYvrxhuJYg8ILrmn9SKSX2tZdV6V+ksulWqS7aXjBcRXl3wHoD9Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/inquire/-/inquire-1.1.0.tgz}
     dev: false
 
   /@protobufjs/path/1.1.2:
-    resolution: {integrity: sha512-6JOcJ5Tm08dOHAbdR3GrvP+yUUfkjG5ePsHYczMFLq3ZmMkAD98cDgcT2iA1lJ9NVwFd4tH/iSSoe44YWkltEA==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-6JOcJ5Tm08dOHAbdR3GrvP+yUUfkjG5ePsHYczMFLq3ZmMkAD98cDgcT2iA1lJ9NVwFd4tH/iSSoe44YWkltEA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/path/-/path-1.1.2.tgz}
     dev: false
 
   /@protobufjs/pool/1.1.0:
-    resolution: {integrity: sha512-0kELaGSIDBKvcgS4zkjz1PeddatrjYcmMWOlAuAPwAeccUrPHdUqo/J6LiymHHEiJT5NrF1UVwxY14f+fy4WQw==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-0kELaGSIDBKvcgS4zkjz1PeddatrjYcmMWOlAuAPwAeccUrPHdUqo/J6LiymHHEiJT5NrF1UVwxY14f+fy4WQw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/pool/-/pool-1.1.0.tgz}
     dev: false
 
   /@protobufjs/utf8/1.1.0:
-    resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@protobufjs/utf8/-/utf8-1.1.0.tgz}
     dev: false
 
   /@rc-component/color-picker/1.4.1_biqbaboplfbrettd7655fr4n2y:
@@ -6156,7 +6219,7 @@ packages:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@types/body-parser/-/body-parser-1.19.2.tgz}
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 20.5.4
+      '@types/node': 20.8.9
 
   /@types/connect/3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@types/connect/-/connect-3.4.35.tgz}
@@ -6197,7 +6260,7 @@ packages:
   /@types/express-serve-static-core/4.17.35:
     resolution: {integrity: sha512-wALWQwrgiB2AWTT91CB62b6Yt0sNHpznUXeZEcnPU3DRdlDIz74x8Qg1UUYKSVFi+va5vKOLYRBI1bRKiLLKIg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@types/express-serve-static-core/-/express-serve-static-core-4.17.35.tgz}
     dependencies:
-      '@types/node': 20.5.4
+      '@types/node': 20.8.9
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
       '@types/send': 0.17.1
@@ -6339,6 +6402,7 @@ packages:
 
   /@types/node/20.5.4:
     resolution: {integrity: sha512-Y9vbIAoM31djQZrPYjpTLo0XlaSwOIsrlfE3LpulZeRblttsLQRFRlBAppW0LOxyT3ALj2M5vU1ucQQayQH3jA==}
+    dev: true
 
   /@types/node/20.8.9:
     resolution: {integrity: sha512-UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==}
@@ -6434,7 +6498,7 @@ packages:
     dependencies:
       '@types/http-errors': 2.0.1
       '@types/mime': 3.0.1
-      '@types/node': 20.5.4
+      '@types/node': 20.8.9
 
   /@types/stack-utils/2.0.1:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
@@ -6448,7 +6512,7 @@ packages:
     resolution: {integrity: sha512-LOWgpacIV8GHhrsQU+QMZuomfqXiqzz3ILLkCtKx3Us6AmomFViuzKT9D693QTKgyut2oCytMG8/efOop+DB+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@types/superagent/-/superagent-4.1.18.tgz}
     dependencies:
       '@types/cookiejar': 2.1.2
-      '@types/node': 20.5.4
+      '@types/node': 20.8.9
     dev: true
 
   /@types/supertest/2.0.12:
@@ -6709,7 +6773,7 @@ packages:
     dev: true
 
   /@typescript-eslint/parser/6.4.1_qj3u6ezxe2airdzjq3nyoxe24m:
-    resolution: {integrity: sha512-610G6KHymg9V7EqOaNBMtD1GgpAmGROsmfHJPXNLCU9bfIuLrkdOygltK784F6Crboyd5tBFayPB7Sf0McrQwg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/parser/-/parser-6.4.1.tgz}
+    resolution: {integrity: sha512-610G6KHymg9V7EqOaNBMtD1GgpAmGROsmfHJPXNLCU9bfIuLrkdOygltK784F6Crboyd5tBFayPB7Sf0McrQwg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -6730,7 +6794,7 @@ packages:
     dev: true
 
   /@typescript-eslint/parser/6.4.1_sf2ha5dxxfjuf3a4egfvu5wr24:
-    resolution: {integrity: sha512-610G6KHymg9V7EqOaNBMtD1GgpAmGROsmfHJPXNLCU9bfIuLrkdOygltK784F6Crboyd5tBFayPB7Sf0McrQwg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/parser/-/parser-6.4.1.tgz}
+    resolution: {integrity: sha512-610G6KHymg9V7EqOaNBMtD1GgpAmGROsmfHJPXNLCU9bfIuLrkdOygltK784F6Crboyd5tBFayPB7Sf0McrQwg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -6751,7 +6815,7 @@ packages:
     dev: true
 
   /@typescript-eslint/scope-manager/5.48.1:
-    resolution: {integrity: sha512-S035ueRrbxRMKvSTv9vJKIWgr86BD8s3RqoRZmsSh/s8HhIs90g6UlK8ZabUSjUZQkhVxt7nmZ63VJ9dcZhtDQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/scope-manager/-/scope-manager-5.48.1.tgz}
+    resolution: {integrity: sha512-S035ueRrbxRMKvSTv9vJKIWgr86BD8s3RqoRZmsSh/s8HhIs90g6UlK8ZabUSjUZQkhVxt7nmZ63VJ9dcZhtDQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@typescript-eslint/types': 5.48.1
@@ -6773,7 +6837,7 @@ packages:
       '@typescript-eslint/visitor-keys': 5.62.0
 
   /@typescript-eslint/scope-manager/6.4.1:
-    resolution: {integrity: sha512-p/OavqOQfm4/Hdrr7kvacOSFjwQ2rrDVJRPxt/o0TOWdFnjJptnjnZ+sYDR7fi4OimvIuKp+2LCkc+rt9fIW+A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/scope-manager/-/scope-manager-6.4.1.tgz}
+    resolution: {integrity: sha512-p/OavqOQfm4/Hdrr7kvacOSFjwQ2rrDVJRPxt/o0TOWdFnjJptnjnZ+sYDR7fi4OimvIuKp+2LCkc+rt9fIW+A==}
     engines: {node: ^16.0.0 || >=18.0.0}
     dependencies:
       '@typescript-eslint/types': 6.4.1
@@ -6881,7 +6945,7 @@ packages:
     dev: true
 
   /@typescript-eslint/types/5.48.1:
-    resolution: {integrity: sha512-xHyDLU6MSuEEdIlzrrAerCGS3T7AA/L8Hggd0RCYBi0w3JMvGYxlLlXHeg50JI9Tfg5MrtsfuNxbS/3zF1/ATg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/types/-/types-5.48.1.tgz}
+    resolution: {integrity: sha512-xHyDLU6MSuEEdIlzrrAerCGS3T7AA/L8Hggd0RCYBi0w3JMvGYxlLlXHeg50JI9Tfg5MrtsfuNxbS/3zF1/ATg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
@@ -6890,16 +6954,16 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   /@typescript-eslint/types/5.62.0:
-    resolution: {integrity: sha512-87NVngcbVXUahrRTqIK27gD2t5Cu1yuCXxbLcFtCzZGlfyVWWh8mLHkoxzjsB6DDNnvdL+fW8MiwPEJyGJQDgQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/types/-/types-5.62.0.tgz}
+    resolution: {integrity: sha512-87NVngcbVXUahrRTqIK27gD2t5Cu1yuCXxbLcFtCzZGlfyVWWh8mLHkoxzjsB6DDNnvdL+fW8MiwPEJyGJQDgQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   /@typescript-eslint/types/6.4.1:
-    resolution: {integrity: sha512-zAAopbNuYu++ijY1GV2ylCsQsi3B8QvfPHVqhGdDcbx/NK5lkqMnCGU53amAjccSpk+LfeONxwzUhDzArSfZJg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/types/-/types-6.4.1.tgz}
+    resolution: {integrity: sha512-zAAopbNuYu++ijY1GV2ylCsQsi3B8QvfPHVqhGdDcbx/NK5lkqMnCGU53amAjccSpk+LfeONxwzUhDzArSfZJg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     dev: true
 
   /@typescript-eslint/typescript-estree/5.48.1_typescript@5.0.4:
-    resolution: {integrity: sha512-Hut+Osk5FYr+sgFh8J/FHjqX6HFcDzTlWLrFqGoK5kVUN3VBHF/QzZmAsIXCQ8T/W9nQNBTqalxi1P3LSqWnRA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.48.1.tgz}
+    resolution: {integrity: sha512-Hut+Osk5FYr+sgFh8J/FHjqX6HFcDzTlWLrFqGoK5kVUN3VBHF/QzZmAsIXCQ8T/W9nQNBTqalxi1P3LSqWnRA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       typescript: '*'
@@ -7023,7 +7087,7 @@ packages:
     dev: true
 
   /@typescript-eslint/typescript-estree/6.4.1_typescript@5.1.6:
-    resolution: {integrity: sha512-xF6Y7SatVE/OyV93h1xGgfOkHr2iXuo8ip0gbfzaKeGGuKiAnzS+HtVhSPx8Www243bwlW8IF7X0/B62SzFftg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/-/typescript-estree-6.4.1.tgz}
+    resolution: {integrity: sha512-xF6Y7SatVE/OyV93h1xGgfOkHr2iXuo8ip0gbfzaKeGGuKiAnzS+HtVhSPx8Www243bwlW8IF7X0/B62SzFftg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       typescript: '*'
@@ -7044,7 +7108,7 @@ packages:
     dev: true
 
   /@typescript-eslint/typescript-estree/6.4.1_typescript@5.2.2:
-    resolution: {integrity: sha512-xF6Y7SatVE/OyV93h1xGgfOkHr2iXuo8ip0gbfzaKeGGuKiAnzS+HtVhSPx8Www243bwlW8IF7X0/B62SzFftg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/-/typescript-estree-6.4.1.tgz}
+    resolution: {integrity: sha512-xF6Y7SatVE/OyV93h1xGgfOkHr2iXuo8ip0gbfzaKeGGuKiAnzS+HtVhSPx8Www243bwlW8IF7X0/B62SzFftg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       typescript: '*'
@@ -7183,7 +7247,7 @@ packages:
     dev: true
 
   /@typescript-eslint/visitor-keys/5.48.1:
-    resolution: {integrity: sha512-Ns0XBwmfuX7ZknznfXozgnydyR8F6ev/KEGePP4i74uL3ArsKbEhJ7raeKr1JSa997DBDwol/4a0Y+At82c9dA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/visitor-keys/-/visitor-keys-5.48.1.tgz}
+    resolution: {integrity: sha512-Ns0XBwmfuX7ZknznfXozgnydyR8F6ev/KEGePP4i74uL3ArsKbEhJ7raeKr1JSa997DBDwol/4a0Y+At82c9dA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@typescript-eslint/types': 5.48.1
@@ -7205,7 +7269,7 @@ packages:
       eslint-visitor-keys: 3.4.3
 
   /@typescript-eslint/visitor-keys/6.4.1:
-    resolution: {integrity: sha512-y/TyRJsbZPkJIZQXrHfdnxVnxyKegnpEvnRGNam7s3TRR2ykGefEWOhaef00/UUN3IZxizS7BTO3svd3lCOJRQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@typescript-eslint/visitor-keys/-/visitor-keys-6.4.1.tgz}
+    resolution: {integrity: sha512-y/TyRJsbZPkJIZQXrHfdnxVnxyKegnpEvnRGNam7s3TRR2ykGefEWOhaef00/UUN3IZxizS7BTO3svd3lCOJRQ==}
     engines: {node: ^16.0.0 || >=18.0.0}
     dependencies:
       '@typescript-eslint/types': 6.4.1
@@ -8529,7 +8593,7 @@ packages:
     dev: false
 
   /bignumber.js/9.1.2:
-    resolution: {integrity: sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/bignumber.js/-/bignumber.js-9.1.2.tgz}
     dev: false
 
   /binary-extensions/2.2.0:
@@ -9084,7 +9148,7 @@ packages:
     dev: true
 
   /cockatiel/3.1.1:
-    resolution: {integrity: sha512-zHMqBGvkZLfMKkBMD+0U8X1nW8zYwMtymgJ8CTknWOmTDpvjEwygtFN4QR9A1iFQDwCbg8g8+B/zVBoxvj1feQ==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-zHMqBGvkZLfMKkBMD+0U8X1nW8zYwMtymgJ8CTknWOmTDpvjEwygtFN4QR9A1iFQDwCbg8g8+B/zVBoxvj1feQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/cockatiel/-/cockatiel-3.1.1.tgz}
     engines: {node: '>=16'}
     dev: false
 
@@ -9573,6 +9637,10 @@ packages:
     engines: {node: '>=0.11'}
     dependencies:
       '@babel/runtime': 7.22.10
+    dev: false
+
+  /dayjs/1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
     dev: false
 
   /dayjs/1.11.9:
@@ -10960,7 +11028,7 @@ packages:
     engines: {node: '>= 0.6'}
 
   /etcd3/1.1.2:
-    resolution: {integrity: sha512-YIampCz1/OmrVo/tR3QltAVUtYCQQOSFoqmHKKeoHbalm+WdXe3l4rhLIylklu8EzR/I3PBiOF4dC847dDskKg==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-YIampCz1/OmrVo/tR3QltAVUtYCQQOSFoqmHKKeoHbalm+WdXe3l4rhLIylklu8EzR/I3PBiOF4dC847dDskKg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/etcd3/-/etcd3-1.1.2.tgz}
     engines: {node: '>=16'}
     dependencies:
       '@grpc/grpc-js': 1.9.2
@@ -15529,7 +15597,7 @@ packages:
     dev: false
 
   /protobufjs/7.2.5:
-    resolution: {integrity: sha512-gGXRSXvxQ7UiPgfw8gevrfRWcTlSbOFg+p/N+JVJEK5VhueL2miT6qTymqAmjr1Q5WbOCyJbyrk6JfWKwlFn6A==, registry: https://registry.npm.taobao.org/}
+    resolution: {integrity: sha512-gGXRSXvxQ7UiPgfw8gevrfRWcTlSbOFg+p/N+JVJEK5VhueL2miT6qTymqAmjr1Q5WbOCyJbyrk6JfWKwlFn6A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/protobufjs/-/protobufjs-7.2.5.tgz}
     engines: {node: '>=12.0.0'}
     requiresBuild: true
     dependencies:
@@ -15543,7 +15611,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.5.4
+      '@types/node': 20.8.9
       long: 5.2.3
     dev: false
 
@@ -18517,7 +18585,7 @@ packages:
     dev: false
 
   /ts-api-utils/1.0.2_typescript@5.1.6:
-    resolution: {integrity: sha512-Cbu4nIqnEdd+THNEsBdkolnOXhg0I8XteoHaEKgvsxpsbWda4IsUut2c187HxywQCvveojow0Dgw/amxtSKVkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/ts-api-utils/-/ts-api-utils-1.0.2.tgz}
+    resolution: {integrity: sha512-Cbu4nIqnEdd+THNEsBdkolnOXhg0I8XteoHaEKgvsxpsbWda4IsUut2c187HxywQCvveojow0Dgw/amxtSKVkQ==}
     engines: {node: '>=16.13.0'}
     peerDependencies:
       typescript: '>=4.2.0'
@@ -18526,7 +18594,7 @@ packages:
     dev: true
 
   /ts-api-utils/1.0.2_typescript@5.2.2:
-    resolution: {integrity: sha512-Cbu4nIqnEdd+THNEsBdkolnOXhg0I8XteoHaEKgvsxpsbWda4IsUut2c187HxywQCvveojow0Dgw/amxtSKVkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/ts-api-utils/-/ts-api-utils-1.0.2.tgz}
+    resolution: {integrity: sha512-Cbu4nIqnEdd+THNEsBdkolnOXhg0I8XteoHaEKgvsxpsbWda4IsUut2c187HxywQCvveojow0Dgw/amxtSKVkQ==}
     engines: {node: '>=16.13.0'}
     peerDependencies:
       typescript: '>=4.2.0'

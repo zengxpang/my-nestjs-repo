@@ -1,0 +1,30 @@
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:51:18","timestamp":"2023-11-03T10:51:18.779Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:51:18","timestamp":"2023-11-03T10:51:18.781Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:51:18","timestamp":"2023-11-03T10:51:18.782Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:51:42","timestamp":"2023-11-03T10:51:42.580Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:51:42","timestamp":"2023-11-03T10:51:42.581Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:51:42","timestamp":"2023-11-03T10:51:42.582Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:52:15","timestamp":"2023-11-03T10:52:15.029Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:52:15","timestamp":"2023-11-03T10:52:15.031Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:52:15","timestamp":"2023-11-03T10:52:15.032Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:52:31","timestamp":"2023-11-03T10:52:31.430Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:52:31","timestamp":"2023-11-03T10:52:31.431Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:52:31","timestamp":"2023-11-03T10:52:31.434Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:52:42","timestamp":"2023-11-03T10:52:42.944Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:52:42","timestamp":"2023-11-03T10:52:42.945Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:52:42","timestamp":"2023-11-03T10:52:42.946Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:53:03","timestamp":"2023-11-03T10:53:03.714Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:53:03","timestamp":"2023-11-03T10:53:03.715Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:53:03","timestamp":"2023-11-03T10:53:03.718Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:56:14","timestamp":"2023-11-03T10:56:14.193Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:56:14","timestamp":"2023-11-03T10:56:14.194Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:56:14","timestamp":"2023-11-03T10:56:14.195Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:56:16","timestamp":"2023-11-03T10:56:16.190Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:56:16","timestamp":"2023-11-03T10:56:16.191Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:56:16","timestamp":"2023-11-03T10:56:16.192Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:56:26","timestamp":"2023-11-03T10:56:26.543Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:56:26","timestamp":"2023-11-03T10:56:26.544Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:56:26","timestamp":"2023-11-03T10:56:26.548Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","time":"2023-11-03 18:56:30","timestamp":"2023-11-03T10:56:30.368Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","time":"2023-11-03 18:56:30","timestamp":"2023-11-03T10:56:30.369Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","time":"2023-11-03 18:56:30","timestamp":"2023-11-03T10:56:30.370Z"}
